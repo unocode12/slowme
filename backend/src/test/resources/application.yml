@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: SlowMe
+  profiles:
+    active: test
+
+logging:
+  config: classpath:config/log/log4j2-test.xml

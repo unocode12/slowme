@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:mysql://${DB_HOST}:${DB_PORT:3306}/${DB_NAME:slowme_qa}?serverTimezone=Asia/Seoul&characterEncoding=UTF-8&useSSL=true
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      connection-init-sql: SET time_zone = '+09:00'
+      maximum-pool-size: 15
+      minimum-idle: 5
+      connection-timeout: 30000
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        jdbc:
+          batch_size: 20
+
+logging:
+  config: classpath:config/log/log4j2-qa.xml
