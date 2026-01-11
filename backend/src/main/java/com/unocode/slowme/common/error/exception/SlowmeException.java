@@ -1,7 +1,9 @@
-package com.unocode.slowme.common.error;
+package com.unocode.slowme.common.error.exception;
 
 import java.util.Collections;
 import java.util.Map;
+
+import com.unocode.slowme.common.error.code.ErrorCode;
 
 public class SlowmeException extends RuntimeException {
 	private final ErrorCode errorCode;

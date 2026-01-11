@@ -1,9 +1,12 @@
-package com.unocode.slowme.common.error;
+package com.unocode.slowme.common.error.handler;
 
 import java.time.Instant;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import com.unocode.slowme.common.error.code.ErrorCode;
+import com.unocode.slowme.common.error.exception.SlowmeException;
+import com.unocode.slowme.common.error.model.ApiErrorResponse;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.ConstraintViolationException;
 

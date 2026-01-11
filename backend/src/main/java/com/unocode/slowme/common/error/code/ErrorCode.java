@@ -1,4 +1,4 @@
-package com.unocode.slowme.common.error;
+package com.unocode.slowme.common.error.code;
 
 import org.springframework.http.HttpStatus;
 

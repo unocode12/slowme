@@ -25,5 +25,16 @@ spring:
         order_updates: true
         generate_statistics: false
 
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+
 logging:
   config: classpath:config/log/log4j2-prod.xml
+
+slowme:
+  realtime:
+    enabled: true
+    ws-endpoint: /ws
+    redis-channel: slowme:room-events

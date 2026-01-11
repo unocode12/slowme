@@ -18,5 +18,17 @@ spring:
         format_sql: true
         use_sql_comments: true
 
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+
 logging:
   config: classpath:config/log/log4j2-local.xml
+
+slowme:
+  realtime:
+    enabled: true
+    ws-endpoint: /ws
+    redis-channel: slowme:room-events
+

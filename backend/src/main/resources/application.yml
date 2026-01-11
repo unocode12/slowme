@@ -18,3 +18,9 @@ management:
 
 server:
   port: 8080
+
+slowme:
+  realtime:
+    enabled: true
+    ws-endpoint: /ws
+    redis-channel: slowme:room-events

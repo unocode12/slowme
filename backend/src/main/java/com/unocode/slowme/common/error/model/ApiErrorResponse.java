@@ -1,4 +1,4 @@
-package com.unocode.slowme.common.error;
+package com.unocode.slowme.common.error.model;
 
 import java.time.Instant;
 import java.util.Map;

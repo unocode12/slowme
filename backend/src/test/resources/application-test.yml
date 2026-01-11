@@ -19,3 +19,7 @@ spring:
 
 logging:
   config: classpath:config/log/log4j2-test.xml
+
+slowme:
+  realtime:
+    enabled: false
